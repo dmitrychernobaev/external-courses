@@ -1,0 +1,70 @@
+.container {
+    position: relative;
+}
+
+.post {
+    box-sizing: border-box;
+    padding: 3px;
+    width: 263px;
+    border: 1px solid #888;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    left: 6px;
+}
+
+label {
+    position: absolute;
+    transition: 0.5s;
+    color: #888;
+    font-size: 14px;
+    line-height: 25px;
+    pointer-events: none;
+    opacity: 1;
+    left: 6px;
+}
+
+input:focus+label, input:valid+label {
+    font-size: 6px;
+    color: rgb(101, 101, 243);
+    transform: translateY(-9px);
+    left: 6px;
+    transition: 0, 5;
+}
+
+
+.post .title {
+    line-height: 25px;
+    width: 250px;
+    border-bottom: 0.5px solid #888;
+}
+
+.post .description {
+    line-height: 25px;
+    width: 250px;
+    border-top: 0.5px solid #888;
+}
+
+.post .price {
+    line-height: 25px;
+    width: 120px;
+}
+
+.post .location {
+    line-height: 25px;
+    width: 120px;
+    border-left: 0.5px solid #888;
+}
+
+
+.post .location1 {
+    left: 130px;
+}
