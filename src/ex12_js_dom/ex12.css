@@ -1,0 +1,71 @@
+@keyframes changeOpacity {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.get-animation {
+    animation: changeOpacity 10s forwards;
+}
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    background-color: rgb(145, 133, 133);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.container-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 15px;
+}
+
+#img-current {
+    width: 705.75px;
+    height: 396.984px;
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.forward, .back {
+    box-sizing: border-box;
+    width: 200px;
+
+    padding: 0px;
+    margin: 0px;
+    background-color: inherit;
+    border: none;
+}
+
+.forward:hover, .back:hover {
+    background-color: rgb(122, 114, 114);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
