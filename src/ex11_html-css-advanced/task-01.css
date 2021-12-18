@@ -19,27 +19,17 @@
 
 @keyframes jump {
     0% {
-        right: 130px;
+        right: 155px;
         bottom: 10px;
-    }
-
-    25% {
-        right: 0px;
-        bottom: 150px;
     }
 
     50% {
-        right: -130px;
+        right: -2px;
         bottom: 10px;
     }
 
-    75% {
-        right: 0px;
-        bottom: 150px;
-    }
-
     100% {
-        right: 130px;
+        right: 155px;
         bottom: 10px;
     }
 }
@@ -76,19 +66,20 @@ body {
 }
 
 .platform {
-    width: 150px;
+    width: 15px;
     height: 150px;
     background-color: rgb(124, 124, 9);
     display: inline-block;
     z-index: 0;
+    margin-right: 150px;
 }
 
 .ball {
     position: relative;
-    bottom: 20px;
+    top: -60px;
     right: 130px;
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
     background-color: red;
     display: inline-block;
     border-radius: 50%;
