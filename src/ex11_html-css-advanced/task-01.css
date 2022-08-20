@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes slide {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        opacity: 3;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes jump {
+    0% {
+        right: 155px;
+        bottom: 10px;
+    }
+
+    50% {
+        right: -2px;
+        bottom: 10px;
+    }
+
+    100% {
+        right: 155px;
+        bottom: 10px;
+    }
+}
+
+body {
+    align-items: center;
+}
+
+.loader {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(46, 175, 74);
+}
+
+.loader div {
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    border-top: 20px solid rgb(194, 233, 86);
+    border-right: 20px solid rgb(46, 175, 74);
+    border-radius: 50%;
+}
+
+.loader div:nth-child(1) {
+    animation: slide 5s linear infinite;
+}
+
+.jumper-container {
+    margin-top: 200px;
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+}
+
+.platform {
+    width: 15px;
+    height: 150px;
+    background-color: rgb(124, 124, 9);
+    display: inline-block;
+    z-index: 0;
+    margin-right: 150px;
+}
+
+.ball {
+    position: relative;
+    top: -60px;
+    right: 130px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+    z-index: 1;
+    animation: jump 5s linear infinite;
+}
+
+.part3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(yellow, green);
+    animation: part3 15s linear infinite;
+
+
+}
+
+@keyframes part3 {
+    0% {
+        border-radius: 50%;
+        background-image: linear-gradient(yellow, green);
+    }
+
+    12.5% {
+        border-radius: 0%;
+    }
+
+    25% {
+        background-image: linear-gradient(blue, white);
+        transform: scale(1);
+    }
+
+    37.5% {
+        transform: scale(3) skew(5deg, 5deg);
+    }
+
+    43.75% {
+        transform: scale(1) skew(0deg, 0deg)
+    }
+
+    50% {
+        transform: rotate(34deg);
+    }
+
+    62.5% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        background-image: linear-gradient(180deg, white, blue);
+        border-radius: 0%;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+}
